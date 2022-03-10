@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login2</title>
+    <link rel="stylesheet" href="index3_1.css" media="screen and (max-width:3360px) ">
+   <link rel="stylesheet" href="" media="screen and (min-width:960px)">
+</head>
+<body>
+    <div class="window">
+        <div class="title">LOGIN</div>
+        <div class="id"> 
+            <input type="text" placeholder="ID">
+        </div>
+        <div class="password">
+            <input type="password" placeholder="PASSWORD" >
+        </div>
+        <div class="login">
+            LOGIN
+            <!-- <button>login</button> -->
+        </div>
+    </div>
+    <script>
+        var inputs=document.getElementsByTagName('input');
+       
+        var buts=document.getElementsByClassName('login');
+        var but=buts[0];
+        
+
+        but.onclick=function(){
+            var id=inputs[0].value;
+            var pass=inputs[1].value;
+            if(id=='123456'&&pass=='qwerty')
+            setTimeout("window.location.href='index3_2.html'",600);
+            
+
+            else
+            alert("账号或密码错误");
+        }
+
+    </script>
+</body>
+</html>
