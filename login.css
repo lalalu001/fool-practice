@@ -35,7 +35,7 @@ input{
     border-left: 0;
     border-right: 0;
     border-bottom: 1px solid black;
-    outline:none;
+    outline:none; /* 去掉点击输入框的点击动画 */
 }
 
 .login{
@@ -55,10 +55,10 @@ input{
 .login:hover{
     background-color: black;
     color: white;
-    cursor: pointer;
+    cursor: pointer;/*光标变成手的样子*/
 }
 .login:active{
-    transform: scale(0.95);
+    transform: scale(0.95);/*缩放*/
     
     cursor: pointer;
 }
